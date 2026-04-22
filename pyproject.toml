@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-engineer"
+version = "0.1.0"
+description = "Interactive coding agent powered by Claude Opus 4.7."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "George" }]
+dependencies = [
+    "anthropic>=0.40.0",
+    "rich>=13.7.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+claude-engineer = "claude_engineer.cli:main"
+ce = "claude_engineer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["claude_engineer*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
