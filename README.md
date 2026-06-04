@@ -16,20 +16,42 @@ An interactive self imporving AI coding agent for creating and using AI tools wi
 - Dynamic module importing system
 
 # Requirements🧷
-- Windows or Linux OS
+- Windows or Mac OS
 - Python 3.6+
 - Anthropic API Key
-- Required packages in `requirements.txt`
+- Required packages from `requirements.txt`
 
 # Installation
+
+## Windows
 
 
 ```bash
 git clone https://github.com/bawadou/claude-engineer
 cd claude-engineer
+python -m venv venv
+venv\Scripts\activate.bat
+
 pip install -r requirements.txt
 # or
 pip install -e .
+
+python main.py
+```
+
+## MacOS / Linux
+
+```bash
+git clone https://github.com/bawadou/claude-engineer
+cd claude-engineer
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+# or
+pip install -e
+
+python3 main.py
 ```
 
 # Configuration⚙
