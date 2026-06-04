@@ -2,7 +2,7 @@ import sys
 import re
 from datetime import date
 from loguru import logger
-
+ 
 # Only import Qt components if not running in container
 try:
     from PySide6.QtWidgets import QTextEdit
