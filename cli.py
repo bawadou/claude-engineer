@@ -4,8 +4,8 @@ import subprocess
 import random
 import string
 import argparse
-import tools/ml
 import sys 
+from tools import ml
 from pathlib import Path
 
 from rich.console import Console
