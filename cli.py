@@ -13,7 +13,7 @@ from rich.markdown import Markdown
 from rich.panel import Panel
 from rich.prompt import Prompt
 
-ml.run_sync(FORCE_SYNC=True)
+ml.run_sync()
 
 def _banner() -> Panel:
     return Panel.fit(
